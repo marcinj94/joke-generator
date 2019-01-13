@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url(../img/chuck.png) no-repeat;
+    background-size: 50%;
+    background-position: bottom right;
+}
+
+button {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.title {
+    text-align: center;
+    padding: 40px;
+    background-color: #000;
+    color: white;
+    box-shadow: 0 0 15px black;
+}
+
+.joke {
+    text-align: center;
+    padding: 20px 5px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+@media(orientation: landscape) {
+    body {
+        background-size: 20%;
+    }
+}
+
+@media(min-width: 1024px) {
+    .joke {
+        padding-top: 70px;
+        font-size: 30px;
+    }
+
+    button:hover {
+        background-color: #fff;
+        color: black;
+    }
+}
