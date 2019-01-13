@@ -2,7 +2,7 @@ jokeText = document.querySelector('.joke');
 btn = document.querySelector('button');
 
 getJoke = () => {
-    fetch("http://api.icndb.com/jokes/random")
+    fetch("https://api.icndb.com/jokes/random")
         .then(resp => {
             if (resp.value = '200') {
                 return resp.json();
